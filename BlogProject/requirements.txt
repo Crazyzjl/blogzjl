@@ -1,0 +1,8 @@
+certifi==2018.11.29
+enum34==1.1.6
+pipenv==2018.11.26
+pywin32==221
+typing==3.6.6
+virtualenv==16.2.0
+virtualenv-clone==0.4.0
+WMI==1.4.9
