@@ -1,0 +1,150 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Jan 16 13:40:04 2019] ***
+compiled with version: 5.4.0 20160609 on 15 January 2019 12:23:46
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz97f4udu4yuzt2bpcs2Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/zjl/sites/blogzjl.site/blogzjl/BlogProject
+detected binary path: /home/zjl/sites/blogzjl.site/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/zjl/sites/blogzjl.site/blogzjl/BlogProject
+your processes number limit is 7857
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :9000 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1fd3fc0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file BlogPrject/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6894)
+spawned uWSGI worker 1 (pid: 6895, cores: 2)
+spawned uWSGI worker 2 (pid: 6896, cores: 2)
+spawned uWSGI worker 3 (pid: 6897, cores: 2)
+spawned uWSGI worker 4 (pid: 6898, cores: 2)
+*** Stats server enabled on 127.0.0.1:9191 fd: 18 ***
+spawned uWSGI http 1 (pid: 6899)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/1] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:16 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/2] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:22 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/3] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:27 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/4] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:30 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/5] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:30 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/6] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/7] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/8] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/9] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/10] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/11] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/12] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/13] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/14] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:32 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/15] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:37 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/16] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:42 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/17] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:42 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/18] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:42 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/19] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:42 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/20] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:44:42 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/21] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:47:25 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/22] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:47:28 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/23] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:47:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/24] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:47:34 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/25] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:47:35 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/26] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:47:35 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/27] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:47:35 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/28] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:47:35 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/29] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:47:35 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/30] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:47:37 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/31] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:47:40 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/32] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:47:55 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/33] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:47:57 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/34] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:47:59 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/35] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:48:00 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/36] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:48:00 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/37] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:48:03 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/38] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:48:09 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/39] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 15:48:10 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/40] 222.209.188.56 () {42 vars in 678 bytes} [Wed Jan 16 15:48:13 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/41] 222.209.188.56 () {38 vars in 585 bytes} [Wed Jan 16 16:20:27 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/42] 222.209.188.56 () {38 vars in 585 bytes} [Wed Jan 16 16:20:28 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/43] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:20:31 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/44] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:20:34 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/45] 222.209.188.56 () {38 vars in 585 bytes} [Wed Jan 16 16:20:37 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/46] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:20:38 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/47] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:20:41 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/48] 222.209.188.56 () {38 vars in 585 bytes} [Wed Jan 16 16:20:42 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/49] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:20:44 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/50] 222.209.188.56 () {38 vars in 585 bytes} [Wed Jan 16 16:20:47 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/51] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:20:55 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6898|app: -1|req: -1/52] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:20:59 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/53] 222.209.188.56 () {38 vars in 585 bytes} [Wed Jan 16 16:20:59 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/54] 27.145.115.16 () {30 vars in 367 bytes} [Wed Jan 16 16:21:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6895|app: -1|req: -1/55] 61.151.178.177 () {38 vars in 562 bytes} [Wed Jan 16 16:21:42 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6897|app: -1|req: -1/56] 222.209.188.56 () {36 vars in 604 bytes} [Wed Jan 16 16:22:32 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6896|app: -1|req: -1/57] 222.209.188.56 () {38 vars in 585 bytes} [Wed Jan 16 16:22:33 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
