@@ -26,7 +26,7 @@ SECRET_KEY = ')l35zf(fve)^04(cua3=mo1njlxx4*me=k_lo9(f_ce*fv(-kj'
 DEBUG = False
 # 允许访问的域名,域名前加一个点表示允许访问该域名下的子域名，比如 www.zmrenwu.com、
 # test.zmrenwu.com 等二级域名同样允许访问。如果不加前面的点则只允许访问 zmrenwu.com
-ALLOWED_HOSTS = ["127.0.0.1", '119.23.188.209', 'localhost', ".blogzjl.site"]
+ALLOWED_HOSTS = ["127.0.0.1", 'localhost', ".blogzjl.site"]
 
 
 # Application definition
@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog_db',
         'USER': 'root',
-        'PASSWORD': '19950711',
+        'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '3306',
     }
