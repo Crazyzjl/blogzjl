@@ -26,7 +26,7 @@ SECRET_KEY = ')l35zf(fve)^04(cua3=mo1njlxx4*me=k_lo9(f_ce*fv(-kj'
 DEBUG = False
 # 允许访问的域名,域名前加一个点表示允许访问该域名下的子域名，比如 www.zmrenwu.com、
 # test.zmrenwu.com 等二级域名同样允许访问。如果不加前面的点则只允许访问 zmrenwu.com
-ALLOWED_HOSTS = ["127.0.0.1", '119.23.188.209', 'localhost', ".blogzjl.site"]
+ALLOWED_HOSTS = ["127.0.0.1", '119.23.188.209',".blogzjl.site"]
 
 
 # Application definition
@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig',
     'Blog.apps.BlogConfig',
     'comments.apps.CommentsConfig',
+    'haystack',
 ]
 
 MIDDLEWARE = [
@@ -77,12 +79,13 @@ WSGI_APPLICATION = 'BlogProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 
 DATABASES = {
     'default': {
@@ -136,3 +139,35 @@ STATIC_URL = '/static/'
 # STATIC_ROOT 指明了静态文件的收集目录，即项目根目录（BASE_DIR）
 # 下的 static 文件夹
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'Blog.whoosh_cn_backends.WhooshEngine',
+        #索引文件存放的位置，这里是项目的根目录
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    },
+}
+#对搜索结果分页，每10项分一页
+HAYSTACK_SERCH_RESULTS_PER_PAGE = 10
+#指定何时更新索引， 这里是每当有文章更新时就更新索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+AUTH_USER_MODEL = 'users.User'
+
+#如果用户通过点击登录或者注销按钮登录和注销的话，
+# 在登录或者注销成功后就会被带回登录或者注销前的页面，否则将他带回网站首页
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/Blog/'
+
+#修改login_required装饰器的默认url
+LOGIN_URL = "/users/login/"
+
+#用于发送邮件到终端
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# 后台登录认证设置，django默认支持用户名、密码登录认证，
+# 所以这里需要重新设置认证方式，自定义一个email、密码认证，并添加进去
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',#用户名、密码认证
+    'users.backends.EmailBackend',#自定义的email、密码认证
+)

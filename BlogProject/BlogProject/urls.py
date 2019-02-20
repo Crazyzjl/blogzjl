@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from Blog.feeds import AllPostsRssFeed
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Blog/', include("Blog.urls")),
+    #path('Blog/', include("Blog.urls")),
     path('comments/', include("comments.urls")),
+    path('search/', include("haystack.urls")),
+    path('', include("Blog.urls")),
+    path(r'all/rss/', AllPostsRssFeed(), name='rss'),
+    path('users/', include('users.urls')),
+    # 登录功能django已经写好了
+    path('users/', include('django.contrib.auth.urls')),
 ]
