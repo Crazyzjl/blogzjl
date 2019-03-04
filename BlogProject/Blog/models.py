@@ -8,6 +8,7 @@ from users.models import User
 # from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
+from django.utils import timezone
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -57,3 +58,40 @@ class Post(models.Model):
         super(Post, self).save(*args, **kwargs)
     class Meta():
         ordering = ["-created_time"]
+
+class UserIp(models.Model):
+    ip = models.CharField(verbose_name="Ip 地址", max_length=30)
+    ip_addr = models.CharField(verbose_name="Ip 物理地址", max_length=30)
+    end_point = models.CharField(verbose_name="Ip 端点", max_length=30)
+    count = models.IntegerField(verbose_name="访问次数", default=0)
+
+    class Meta:
+        verbose_name = '访问用户信息'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.ip
+
+#网站总访问次数
+class VisitNumber(models.Model):
+    count = models.IntegerField(verbose_name="网站访问总次数", default=0)
+
+    class Meta:
+        verbose_name = "网站访问总次数"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return str(self.count)
+
+#单日访问统计
+class DayNumber(models.Model):
+    # day = models.DateTimeField("访问时间", auto_now_add=True)
+    day = models.DateTimeField(verbose_name="日期", default=timezone.now)
+    count = models.IntegerField(verbose_name="访问次数", default=0)
+
+    class Meta:
+        verbose_name = "网站日访问量统计"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return str(self.day)
