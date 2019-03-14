@@ -19,8 +19,8 @@ class IndexView(ListView):
     model = Post
     template_name = 'Blog/index.html'
     context_object_name = 'post_list'
-    #每页显示10篇文章，ListView已经帮我们实现了简单的分页功能
-    paginate_by = 2
+    #每页显示多少篇文章，ListView已经帮我们实现了简单的分页功能
+    paginate_by = 15
 
     @method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):

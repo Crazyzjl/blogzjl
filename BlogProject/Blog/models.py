@@ -36,7 +36,7 @@ class Post(models.Model):
         (1, "转载"),
         (2, "借鉴")
         )
-    reprinted = models.CharField(max_length=120,choices=reprinted_choices, default=0)
+    reprinted = models.SmallIntegerField("文章性质", choices=reprinted_choices, default=0)
     source = models.CharField(max_length=120,default="A Little")
     url = models.CharField(max_length=120,blank=True, null=True)
     writer = models.CharField(max_length=120,blank=True,null=True)
