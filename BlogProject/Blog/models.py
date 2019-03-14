@@ -11,26 +11,35 @@ from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
 
 class Category(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100,unique=True)
     def __str__(self):
         return self.name
 
 class Tag(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100,unique=True)
     def __str__(self):
         return self.name
 
 class Post(models.Model):
     """文章数据库表"""
 
-    title = models.CharField(max_length=70)
+    title = models.CharField(max_length=120)
     body = models.TextField()
     created_time = models.DateTimeField()
     modified_time = models.DateTimeField()
-    excerpt = models.CharField(max_length=200, blank=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    tags = models.ManyToManyField(Tag, blank=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    excerpt = models.CharField(max_length=200, blank=True, null=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
+    tags = models.ManyToManyField(Tag, blank=True, default=1)
+    author = models.ForeignKey(User, on_delete=models.CASCADE,default=1)
+    reprinted_choices = (
+        (0, "原著"),
+        (1, "转载"),
+        (2, "借鉴")
+        )
+    reprinted = models.CharField(max_length=120,choices=reprinted_choices, default=0)
+    source = models.CharField(max_length=120,default="A Little")
+    url = models.CharField(max_length=120,blank=True, null=True)
+    writer = models.CharField(max_length=120,blank=True,null=True)
     views = models.PositiveIntegerField(default=0)
 
     def __str__(self):
