@@ -13,7 +13,7 @@ jieba==0.39
 Markdown==3.0.1
 maxminddb==1.4.1
 pefile==2018.8.8
-pipenv==2018.11.26
+pipenv==2022.1.8
 PyMySQL==0.9.3
 python-ptrace==0.9.3
 pytz==2018.9
